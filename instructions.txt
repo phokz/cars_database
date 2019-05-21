@@ -6,11 +6,15 @@ password: 123
 Login: customer
 password: 123
 
-Cross-site scripting:
-  Original:
-    /cars?name=Jiří
-  DOM based:
-    /cars?name=<script>alert('Toto je úspěšný XSS útok.');</script>
+Cross-site 
+  scripting:
+    Original:
+      /cars?name=Jiří
+    DOM based:
+      /cars?name=<script>alert('Toto je úspěšný XSS útok.');</script>
+  stored:
+    add <script>alert('Toto je úspěšný XSS útok.');</script> to 'Brand' input in edit or new
+    
 SQL injection
   Login: 'or 1 or'
   Password: 'or 1 or'

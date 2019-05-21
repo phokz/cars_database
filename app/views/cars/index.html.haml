@@ -16,7 +16,7 @@
   %tbody
     - @cars.each do |car|
       %tr
-        %td= car.brand
+        %td= car.brand.html_safe
         %td= car.name
         %td= car.color
         %td= car.manufacturing_date
