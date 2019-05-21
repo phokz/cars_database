@@ -1,3 +1,11 @@
+$ rails db:seed
+
+Login: admin
+password: 123
+
+Login: customer
+password: 123
+
 Cross-site scripting:
   Original:
     /cars?name=Jiří
