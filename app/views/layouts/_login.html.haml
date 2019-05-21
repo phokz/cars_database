@@ -1,0 +1,3 @@
+%h5= "Přihlíšen jako : #{@current_user.login}" unless @current_user.nil?
+= link_to "Odhlásit", singout_users_path, method: :post unless @current_user.nil?
+= link_to "Přihlásit", login_users_path if @current_user.nil?

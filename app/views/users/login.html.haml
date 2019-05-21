@@ -1,0 +1,4 @@
+= form_tag("/users/singin", method: "post") do
+  = text_field_tag(:login)
+  = text_field_tag(:password)
+  = submit_tag("Přihlásit")

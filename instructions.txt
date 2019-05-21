@@ -1,0 +1,5 @@
+Cross-site scripting:
+  Original:
+    /cars?name=Jiří
+  DOM based:
+    /cars?name=<script>alert('Toto je úspěšný XSS útok.');</script>

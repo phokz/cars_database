@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  name: MyString
+  color: MyString
+  manufacturing_date: 2019-05-21
+  spz: MyString
+  mileage: 1
+
+two:
+  brand: MyString
+  name: MyString
+  color: MyString
+  manufacturing_date: 2019-05-21
+  spz: MyString
+  mileage: 1

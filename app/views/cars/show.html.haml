@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Brand:
+  = @car.brand
+%p
+  %b Name:
+  = @car.name
+%p
+  %b Color:
+  = @car.color
+%p
+  %b Manufacturing date:
+  = @car.manufacturing_date
+%p
+  %b Spz:
+  = @car.spz
+%p
+  %b Mileage:
+  = @car.mileage
+
+= link_to 'Edit', edit_car_path(@car)
+\|
+= link_to 'Back', cars_path

@@ -1,0 +1,31 @@
+%h1 Listing cars
+%h2#name
+%table
+  %thead
+    %tr
+      %th Brand
+      %th Name
+      %th Color
+      %th Manufacturing date
+      %th Spz
+      %th Mileage
+      %th
+      %th
+      %th
+
+  %tbody
+    - @cars.each do |car|
+      %tr
+        %td= car.brand
+        %td= car.name
+        %td= car.color
+        %td= car.manufacturing_date
+        %td= car.spz
+        %td= car.mileage
+        %td= link_to 'Show', car 
+        %td= link_to 'Edit', edit_car_path(car) if !@current_user.nil? && @current_user.admin
+        %td= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } if !@current_user.nil? && @current_user.admin
+
+%br
+
+= link_to 'New Car', new_car_path
