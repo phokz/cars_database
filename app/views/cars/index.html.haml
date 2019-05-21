@@ -24,8 +24,8 @@
         %td= car.mileage
         %td= link_to 'Show', car 
         %td= link_to 'Edit', edit_car_path(car) if !@current_user.nil? && @current_user.admin
-        %td= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } if !@current_user.nil? && @current_user.admin
+        %td= link_to 'Destroy', car_delete_path(car), method: :get, data: { confirm: 'Are you sure?' } if !@current_user.nil? && @current_user.admin
 
 %br
 
-= link_to 'New Car', new_car_path
+= link_to 'New Car', new_car_path if !@current_user.nil? && @current_user.admin

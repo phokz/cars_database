@@ -12,7 +12,6 @@ class UsersController < ApplicationController
 
   def singin
     @user = User.where("login = '#{params[:login]}' AND password = '#{params[:password]}'").take
-    raise
     session[:current_user_id] = @user.id unless @user.blank?
     redirect_to :root
   end

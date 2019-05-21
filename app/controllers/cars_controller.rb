@@ -1,6 +1,6 @@
 class CarsController < ApplicationController
   before_action :set_car, only: [:show, :edit, :update, :destroy]
-  before_action :unless_admin, only: [:create, :edit, :update, :destroy]
+  before_action :unless_admin, only: [:new, :create, :edit, :update, :destroy]
 
   # GET /cars
   # GET /cars.json

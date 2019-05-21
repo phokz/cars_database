@@ -3,3 +3,8 @@ Cross-site scripting:
     /cars?name=Jiří
   DOM based:
     /cars?name=<script>alert('Toto je úspěšný XSS útok.');</script>
+SQL injection
+  Login: 'or 1 or'
+  Password: 'or 1 or'
+Use Get for changing parameters
+  /cars/:id/delete
